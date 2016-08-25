@@ -16,6 +16,7 @@ public class MarksAverageWithUserInput {
 		   float course4 = in.nextFloat();
 		   float course5 = in.nextFloat();
 		   float course6 = in.nextFloat();
+		   in.close();
 		   float average;
 		   Float percentage;
 		   average = (course1 + course2 + course3 + course4 + course5 + course6)/600;
