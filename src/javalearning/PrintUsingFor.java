@@ -5,6 +5,7 @@ public class PrintUsingFor {
 	{
 		PrintUsingFor();
 		PrintUsingForOposite();
+		PrintUsingForSame();
 	}
 	public static void PrintUsingFor()
 	{
@@ -24,6 +25,17 @@ public class PrintUsingFor {
 			  for (int j=5;j>=i;j--)
 			  {
 				  System.out.print(j+" ");		 
+			  }
+			System.out.println("");
+		  }
+	}
+	public static void PrintUsingForSame()
+	{
+		 for (int i=1;i<=5; i++)
+		  {
+			  for (int j=1;j<=i;j++)
+			  {
+				  System.out.print(i+" ");		 
 			  }
 			System.out.println("");
 		  }
