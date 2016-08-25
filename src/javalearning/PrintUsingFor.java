@@ -3,8 +3,11 @@ package javalearning;
 public class PrintUsingFor {
 	public static void main(String[] args)
 	{
+	   System.out.println("first pattern ");	
 		PrintUsingFor();
+		System.out.println("Second pattern ");	
 		PrintUsingForOposite();
+		System.out.println("Third pattern ");
 		PrintUsingForSame();
 	}
 	public static void PrintUsingFor()
