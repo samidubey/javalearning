@@ -20,7 +20,7 @@ public class RectangleCompare {
             double  Rect2_area;
         	String  Rect2_colour = set_colour();
         	double Rect2_length = set_length();
-            double  Rect2_width = set_width();
+            double Rect2_width = set_width();
             Rect2_area =  Rect2_length* Rect2_width;
             if(Rect1_area == Rect2_area & Rect1_colour.equals(Rect2_colour) )
             {
