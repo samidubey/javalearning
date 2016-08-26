@@ -1,31 +1,26 @@
 package javalearning;
 
 public class Rectangle {
-	 double length;
-	 double width;
-	 String colour;
-	 double area;
+	 private double length;
+	 private double width;
+	 private String colour;
 	 
-	 public Rectangle()
-	 {
-		 
-	 }
-	
+	 
 	public  Rectangle(double length, double width, String colour)
 	{
-		length = this.length;
-		width = this.width;
-		colour = this.colour;
+		this.length = length;
+		this.width = width;
+		this.colour = colour;
    }
 	
-	public double area(double length, double width)
+	public double area()
 	{
 		return length*width;
 	}
 
 	 public boolean equals(Rectangle object1, Rectangle object2) {
 			
-		if (object1.getLength() == object2.getLength() && object1.getWidth() == object2.getWidth())
+		if (object1.getLength() == object2.getLength() && object1.getWidth() == object2.getWidth()&& object1.getColour().equals(object2.getColour()))
 		{
 			return true;
 		}
