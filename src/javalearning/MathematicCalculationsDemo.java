@@ -11,6 +11,7 @@ public class MathematicCalculationsDemo {
 		useInterface UI = new useInterface();
 		System.out.println(UI.carModel("TATA"));
 		System.out.println(UI.carSpeed(100));
+
 	}
 
 }
