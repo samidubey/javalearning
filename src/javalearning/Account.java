@@ -23,63 +23,18 @@ public class Account {
 		this.strAddress = strAddress;
 	}
 
-	public static double deposit(Account Acc, double Amount) {
-		double deposite = 0;
-		deposite = Acc.getDblIntAmount() + Amount;
-		Acc.setDblIntAmount(deposite);
-		return deposite;
+	public double deposit(double Amount) {
+
+		return this.dblIntAmount = this.dblIntAmount + Amount;
 	}
 
-	public static double withdraw(Account Acc, double Amount) {
-		double withdraw = 0;
-		withdraw = Acc.getDblIntAmount() - Amount;
-		Acc.setDblIntAmount(withdraw);
-		return withdraw;
+	public double withdraw(double Amount) {
+
+		return this.dblIntAmount = this.dblIntAmount - Amount;
 
 	}
 
-	public static double getBalance(Account Acc) {
-		return Acc.getDblIntAmount();
+	public double getBalance() {
+		return this.dblIntAmount;
 	}
-
-	public String getStrAccHolderName() {
-		return strAccHolderName;
-	}
-
-	public void setStrAccHolderName(String strAccHolderName) {
-		this.strAccHolderName = strAccHolderName;
-	}
-
-	public int getIntAccNumber() {
-		return intAccNumber;
-	}
-
-	public void setIntAccNumber(int intAccNumber) {
-		this.intAccNumber = intAccNumber;
-	}
-
-	public String getStrAddress() {
-		return strAddress;
-	}
-
-	public void setStrAddress(String strAddress) {
-		this.strAddress = strAddress;
-	}
-
-	public String getStrTypeOfAcc() {
-		return strTypeOfAcc;
-	}
-
-	public void setStrTypeOfAcc(String strTypeOfAcc) {
-		this.strTypeOfAcc = strTypeOfAcc;
-	}
-
-	public double getDblIntAmount() {
-		return dblIntAmount;
-	}
-
-	public void setDblIntAmount(double dblIntAmount) {
-		this.dblIntAmount = dblIntAmount;
-	}
-
 }
