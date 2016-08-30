@@ -24,7 +24,15 @@ public class Account {
 		this.dblCurrentBalance = dblCurrentBalance;
 	}
 	
-	public double Get_Balance()
+	public double deposit(double Amount)
+	{
+		return this.dblCurrentBalance + Amount;
+	}
+	public double withdraw(double Amount)
+	{
+		return this.dblCurrentBalance - Amount;
+	}
+	public double getBalance()
 	{
 		return this.dblCurrentBalance;
 	}
