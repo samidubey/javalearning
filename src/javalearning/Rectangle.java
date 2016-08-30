@@ -18,7 +18,7 @@ public class Rectangle {
 		return length*width;
 	}
 
-	 public boolean equals(Rectangle object1, Rectangle object2) {
+	 public static boolean isSame(Rectangle object1, Rectangle object2) {
 			
 		if (object1.getLength() == object2.getLength() && object1.getWidth() == object2.getWidth()&& object1.getColour().equals(object2.getColour()))
 		{

@@ -7,7 +7,7 @@ public static void main(String[] args)
 	Rectangle rect = new Rectangle( 4, 5,  "White");
 
     Rectangle rect1 = new Rectangle(4, 6, "White");
-    boolean result = rect1.equals(rect, rect1);
+    boolean result = Rectangle.isSame(rect, rect1);
 
 	
 	System.out.println("Rectangle 1 - Length[" + rect.getLength()+"], Width["+rect.getWidth()+"], Color["+rect.getColour()+"]");
