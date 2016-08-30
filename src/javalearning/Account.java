@@ -25,16 +25,20 @@ public class Account {
 
 	public double deposit(double Amount) {
 
-		return this.dblIntAmount = this.dblIntAmount + Amount;
+		return this.dblIntAmount += Amount;
 	}
 
 	public double withdraw(double Amount) {
 
-		return this.dblIntAmount = this.dblIntAmount - Amount;
+		return this.dblIntAmount -= Amount;
 
 	}
 
 	public double getBalance() {
 		return this.dblIntAmount;
+	}
+
+	public String getDetails() {
+		return this.strAccHolderName = this.strAccHolderName + " " + this.strAddress;
 	}
 }
