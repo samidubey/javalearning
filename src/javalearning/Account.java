@@ -39,6 +39,6 @@ public class Account {
 	}
 
 	public String getDetails() {
-		return this.strAccHolderName = this.strAccHolderName + " " + this.strAddress;
+		return this.strAccHolderName + " " + this.strAddress + " " + this.intAccNumber + " " + this.strTypeOfAcc;
 	}
 }
