@@ -1,4 +1,4 @@
-package javalearning;
+package com.examples;
 
 public class FirstLearningClass {
     public static void main(String[] args) {
