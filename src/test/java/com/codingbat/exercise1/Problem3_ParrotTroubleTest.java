@@ -18,14 +18,16 @@ public class Problem3_ParrotTroubleTest {
     @Test
     public void Problem3_ParrotTroubleWhenParrotTalkingAndHourLessThan7OrMoreThan20() {
         boolean expected = true;
-        boolean actual = fixture.parrotTrouble(true, 6);
+        int hour = 6;
+        boolean actual = fixture.parrotTrouble(true, hour);
         assertThat(expected, is(equalTo(actual)));
     }
 
     @Test
     public void Problem3_ParrotTroubleWhenParrotNotTalkingAndHourMoreThan7OrLessThan20() {
         boolean expected = false;
-        boolean actual = fixture.parrotTrouble(false, 8);
+        int hour = 8;
+        boolean actual = fixture.parrotTrouble(false, hour);
         assertThat(expected, is(equalTo(actual)));
     }
 }
