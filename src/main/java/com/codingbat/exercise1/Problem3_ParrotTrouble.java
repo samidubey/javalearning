@@ -1,9 +1,9 @@
 package com.codingbat.exercise1;
 
 public class Problem3_ParrotTrouble {
-    public boolean parrotTrouble(boolean talking, int hour) {
 
-        return ((talking == true) && (hour < 7 || hour > 20));
+    public boolean parrotTrouble(boolean talking, int hour) {
+        return (talking == true) && (hour < 7 || hour > 20);
     }
 
     public static void main(String[] args) {

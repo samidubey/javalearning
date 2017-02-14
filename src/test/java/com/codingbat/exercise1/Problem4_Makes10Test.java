@@ -17,7 +17,7 @@ public class Problem4_Makes10Test {
     }
 
     @Test
-    public void Makes10WhenSumIs10() {
+    public void testMakes10WhenSumIs10() {
         int number1 = 1;
         int number2 = 9;
         boolean actual = feature.makes10(number1, number2);
@@ -26,7 +26,7 @@ public class Problem4_Makes10Test {
     }
 
     @Test
-    public void Makes10WhenAnyNumberIs10() {
+    public void testMakes10WhenAnyNumberIs10() {
         int number1 = 9;
         int number2 = 10;
         boolean actual = feature.makes10(number1, number2);
@@ -35,7 +35,7 @@ public class Problem4_Makes10Test {
     }
 
     @Test
-    public void Makes10WhenAnyNumberIsNot10AndSumIsNot10() {
+    public void testMakes10WhenAnyNumberIsNot10AndSumIsNot10() {
         int number1 = 9;
         int number2 = 9;
         boolean actual = feature.makes10(number1, number2);

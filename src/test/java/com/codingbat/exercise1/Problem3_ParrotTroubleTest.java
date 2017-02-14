@@ -8,6 +8,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class Problem3_ParrotTroubleTest {
+
     private Problem3_ParrotTrouble fixture;
 
     @Before
