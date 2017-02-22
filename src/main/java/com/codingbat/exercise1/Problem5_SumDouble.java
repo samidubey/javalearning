@@ -1,8 +1,8 @@
 package com.codingbat.exercise1;
 
-public class Problem6_SumDouble {
+public class Problem5_SumDouble {
     public static void main(String[] args) {
-        Problem6_SumDouble obj = new Problem6_SumDouble();
+        Problem5_SumDouble obj = new Problem5_SumDouble();
         System.out.println(obj.sumDouble(1, 2));
         System.out.println(obj.sumDouble(3, 2));
         System.out.println(obj.sumDouble(2, 2));

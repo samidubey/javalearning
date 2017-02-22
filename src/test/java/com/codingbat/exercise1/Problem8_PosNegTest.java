@@ -7,12 +7,12 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import org.junit.Before;
 import org.junit.Test;
 
-public class Problem7_PosNegTest {
-    private Problem7_PosNeg fixture;
+public class Problem8_PosNegTest {
+    private Problem8_PosNeg fixture;
 
     @Before
     public void setup() {
-        fixture = new Problem7_PosNeg();
+        fixture = new Problem8_PosNeg();
     }
 
     @Test

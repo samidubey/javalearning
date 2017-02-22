@@ -1,8 +1,8 @@
 package com.codingbat.exercise1;
 
-public class Problem7_PosNeg {
+public class Problem8_PosNeg {
     public static void main(String[] args) {
-        Problem7_PosNeg obj = new Problem7_PosNeg();
+        Problem8_PosNeg obj = new Problem8_PosNeg();
         System.out.println(obj.posNeg(-1, 1, false));
         System.out.println(obj.posNeg(1, -1, false));
         System.out.println(obj.posNeg(1, 1, false));
