@@ -12,7 +12,7 @@ public class Problem4_Makes10Test {
     private Problem4_Makes10 feature;
 
     @Before
-    public void setup() {
+    public void setUp() {
         feature = new Problem4_Makes10();
     }
 

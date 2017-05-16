@@ -11,7 +11,7 @@ public class Problem5_SumDoubleTest {
     private Problem5_SumDouble fixture;
 
     @Before
-    public void setup() {
+    public void setUp() {
         fixture = new Problem5_SumDouble();
     }
 

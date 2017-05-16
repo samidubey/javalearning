@@ -12,7 +12,7 @@ public class Problem6_MonkeyTroubleTest {
     private Problem6_MonkeyTrouble fixture;
 
     @Before
-    public void setup() {
+    public void setUp() {
         fixture = new Problem6_MonkeyTrouble();
     }
 

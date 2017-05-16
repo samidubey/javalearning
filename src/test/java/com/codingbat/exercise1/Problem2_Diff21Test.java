@@ -11,7 +11,7 @@ public class Problem2_Diff21Test {
     private Problem2_Diff21 fixture;
 
     @Before
-    public void setup() {
+    public void setUp() {
         fixture = new Problem2_Diff21();
     }
 
