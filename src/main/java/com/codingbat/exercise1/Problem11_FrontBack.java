@@ -4,40 +4,43 @@ public class Problem11_FrontBack {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(frontBack("one"));
-		System.out.println(frontBack("Samridhi"));
-		System.out.println(frontBack(""));
-		System.out.println(frontBackOldSchool("Deepak"));
-		System.out.println(frontBackOldSchool("Me"));
-		System.out.println(frontBackOldSchool(""));
+		Problem11_FrontBack obj = new Problem11_FrontBack();
+		System.out.println(obj.frontBack("one"));
+		System.out.println(obj.frontBack("Samridhi"));
+		System.out.println(obj.frontBack(""));
+		System.out.println(obj.frontBackOldSchool("Deepak"));
+		System.out.println(obj.frontBackOldSchool("Me"));
+		System.out.println(obj.frontBackOldSchool(""));
 	}
 
-	public static String frontBack(String str) {
+	public String frontBack(String str) {
 
-		if (str != null && !str.isEmpty()) {
-			StringBuilder sb = new StringBuilder(str);
-			char firstChar = sb.charAt(0);
-			char lastChar = sb.charAt(str.length() - 1);
-			sb.deleteCharAt(0);
-			sb.insert(0, lastChar);
-			sb.deleteCharAt(str.length() - 1);
-			sb.insert(str.length() - 1, firstChar);
-			String output = sb.toString();
-			return output;
+		if (str == null || str.isEmpty()) {
+			return "";
 		}
-		return str;
+		StringBuilder sb = new StringBuilder(str);
+		char firstChar = sb.charAt(0);
+		char lastChar = sb.charAt(str.length() - 1);
+		sb.deleteCharAt(0);
+		sb.insert(0, lastChar);
+		sb.deleteCharAt(str.length() - 1);
+		sb.insert(str.length() - 1, firstChar);
+		String output = sb.toString();
+		return output;
+
 	}
 
-	public static String frontBackOldSchool(String str) {
+	public String frontBackOldSchool(String str) {
 
-		if (str != null && !str.isEmpty()) {
-			char firstChar = str.charAt(0);
-			char lastChar = str.charAt(str.length() - 1);
-			String middle = str.substring(1, str.length() - 1);
-			String output = String.valueOf(lastChar) + middle + String.valueOf(firstChar);
-			return output;
-
+		if (str == null || str.isEmpty()) {
+			return "";
 		}
-		return str;
+
+		char firstChar = str.charAt(0);
+		char lastChar = str.charAt(str.length() - 1);
+		String middle = str.substring(1, str.length() - 1);
+		String output = String.valueOf(lastChar) + middle + String.valueOf(firstChar);
+		return output;
+
 	}
 }
