@@ -8,7 +8,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class Problem15_StartHiTest {
-
 	private Problem15_StartHi fixture;
 
 	@Before
@@ -40,6 +39,7 @@ public class Problem15_StartHiTest {
 		assertThat(actual, is(equalTo(expected)));
 	}
 
+	@Test
 	public void testCaseStrisNull() {
 		String str = null;
 		Boolean expected = false;
@@ -47,6 +47,7 @@ public class Problem15_StartHiTest {
 		assertThat(actual, is(equalTo(expected)));
 	}
 
+	@Test
 	public void testCaseStrIsEmpty() {
 		String str = "";
 		Boolean expected = false;

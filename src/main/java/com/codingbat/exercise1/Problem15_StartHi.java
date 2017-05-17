@@ -11,6 +11,7 @@ public class Problem15_StartHi {
 		System.out.println(obj.startHi("h"));
 		System.out.println(obj.startHi(""));
 		System.out.println(obj.startHi(null));
+		System.out.println(obj.startHi("There hi"));
 	}
 
 	public boolean startHi(String str) {
