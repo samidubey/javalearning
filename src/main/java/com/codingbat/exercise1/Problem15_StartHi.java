@@ -19,7 +19,7 @@ public class Problem15_StartHi {
 		}
 		if (str.length() > 1) {
 			String startTwoChar = str.substring(0, 2);
-			if (startTwoChar.equals("hi")) {
+			if ("hi".equals(startTwoChar)) {
 				return true;
 			}
 		}
