@@ -3,7 +3,6 @@ package com.codingbat.exercise1;
 public class Problem14_Front22 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Problem14_Front22 obj = new Problem14_Front22();
 		System.out.println(obj.front22("kitten"));
 		System.out.println(obj.front22("ha"));

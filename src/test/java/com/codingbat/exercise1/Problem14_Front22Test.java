@@ -19,7 +19,7 @@ public class Problem14_Front22Test {
 	public void testCaseTakeStartingTwoCharAndRepetTheSameFrontAndBack() {
 		String str = "kitten";
 		String expected = "kikittenki";
-		String actual = fixture.Front22(str);
+		String actual = fixture.front22(str);
 		assertThat(actual, is(equalTo(expected)));
 	}
 
@@ -27,7 +27,7 @@ public class Problem14_Front22Test {
 	public void testCaseTakeStartingTwoCharAndRepetTheSameFrontAndBackWhenStrOnlyTwoChar() {
 		String str = "ha";
 		String expected = "hahaha";
-		String actual = fixture.Front22(str);
+		String actual = fixture.front22(str);
 		assertThat(actual, is(equalTo(expected)));
 	}
 
@@ -35,7 +35,7 @@ public class Problem14_Front22Test {
 	public void testCaseWhenStrOnlyOneChar() {
 		String str = "a";
 		String expected = "aaa";
-		String actual = fixture.Front22(str);
+		String actual = fixture.front22(str);
 		assertThat(actual, is(equalTo(expected)));
 	}
 
@@ -43,7 +43,7 @@ public class Problem14_Front22Test {
 	public void testCaseWhenStrIsNull() {
 		String str = null;
 		String expected = "";
-		String actual = fixture.Front22(str);
+		String actual = fixture.front22(str);
 		assertThat(actual, is(equalTo(expected)));
 	}
 
@@ -51,7 +51,7 @@ public class Problem14_Front22Test {
 	public void testCaseWhenStrIsEmpty() {
 		String str = "";
 		String expected = "";
-		String actual = fixture.Front22(str);
+		String actual = fixture.front22(str);
 		assertThat(actual, is(equalTo(expected)));
 	}
 }
