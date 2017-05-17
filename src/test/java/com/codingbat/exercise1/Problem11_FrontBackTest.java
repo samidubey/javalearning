@@ -27,6 +27,28 @@ public class Problem11_FrontBackTest {
 	}
 
 	@Test
+	public void testCaseSwitchedWhenHasOnlyTwoChar() {
+		String str = "De";
+		String expected = "eD";
+		String actual1 = fixture.frontBack(str);
+		String actual2 = fixture.frontBackOldSchool(str);
+		assertThat(actual1, is(equalTo(expected)));
+		assertThat(actual2, is(equalTo(expected)));
+
+	}
+
+	@Test
+	public void testCaseSwitchedWhenHasOnlyOneChar() {
+		String str = "e";
+		String expected = "e";
+		String actual1 = fixture.frontBack(str);
+		String actual2 = fixture.frontBackOldSchool(str);
+		assertThat(actual1, is(equalTo(expected)));
+		assertThat(actual2, is(equalTo(expected)));
+
+	}
+
+	@Test
 	public void testCaseWhenStrIsNull() {
 		String str = null;
 		String expected = "";
