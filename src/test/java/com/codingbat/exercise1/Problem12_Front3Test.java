@@ -27,6 +27,39 @@ public class Problem12_Front3Test {
 	}
 
 	@Test
+	public void testCaseWhenStrHasOnlyThreeCharacters() {
+		String str = "jaj";
+		String expected = "jajjajjaj";
+		String actual1 = fixture.front3(str);
+		String actual2 = fixture.front3OldSchool(str);
+		assertThat(actual1, is(equalTo(expected)));
+		assertThat(actual2, is(equalTo(expected)));
+
+	}
+
+	@Test
+	public void testCaseWhenStrHasOnlyTwoCharacters() {
+		String str = "ja";
+		String expected = "jajaja";
+		String actual1 = fixture.front3(str);
+		String actual2 = fixture.front3OldSchool(str);
+		assertThat(actual1, is(equalTo(expected)));
+		assertThat(actual2, is(equalTo(expected)));
+
+	}
+
+	@Test
+	public void testCaseWhenStrHasOnlyOneCharacters() {
+		String str = "a";
+		String expected = "aaa";
+		String actual1 = fixture.front3(str);
+		String actual2 = fixture.front3OldSchool(str);
+		assertThat(actual1, is(equalTo(expected)));
+		assertThat(actual2, is(equalTo(expected)));
+
+	}
+
+	@Test
 	public void testCaseWhenStrIsNull() {
 		String str = null;
 		String expected = "";
