@@ -5,13 +5,13 @@ public class Problem14_Front22 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Problem14_Front22 obj = new Problem14_Front22();
-		System.out.println(obj.Front22("kitten"));
-		System.out.println(obj.Front22("ha"));
-		System.out.println(obj.Front22("abc"));
-		System.out.println(obj.Front22("a"));
+		System.out.println(obj.front22("kitten"));
+		System.out.println(obj.front22("ha"));
+		System.out.println(obj.front22("abc"));
+		System.out.println(obj.front22("a"));
 	}
 
-	public String Front22(String str) {
+	public String front22(String str) {
 		if (str == null || str.isEmpty()) {
 			return "";
 		}
