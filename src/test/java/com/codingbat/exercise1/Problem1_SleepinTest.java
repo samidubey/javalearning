@@ -12,7 +12,7 @@ public class Problem1_SleepinTest {
     private Problem1_Sleepin fixture;
 
     @Before
-    public void setup() {
+    public void setUp() {
         System.out.println("Setting Up Things...");
         fixture = new Problem1_Sleepin();
     }
