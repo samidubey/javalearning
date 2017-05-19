@@ -13,7 +13,7 @@ public class Problem26_Max1020 {
 
 	public int max1020(int a, int b) {
 		boolean max = a > b;
-		if (max == true) {
+		if (max) {
 			if (a >= 10 && a <= 20) {
 				return a;
 			} else if (b >= 10 && b <= 20) {
