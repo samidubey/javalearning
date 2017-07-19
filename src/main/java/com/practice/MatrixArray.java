@@ -10,7 +10,6 @@ public class MatrixArray {
 
 		System.out.println("Array1");
 		obj.printArrays(array1);
-
 		System.out.println("Array2");
 		obj.printArrays(array2);
 
