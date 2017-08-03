@@ -35,6 +35,25 @@ public class MathFunctions {
 
 		System.out.println("map");
 		map();
+
+		System.out.println("only 10 items");
+		ArrayList<Integer> numbers = new ArrayList<>();
+		numbers.add(1);
+		numbers.add(2);
+		numbers.add(3);
+		numbers.add(4);
+		numbers.add(5);
+		numbers.add(6);
+		numbers.add(7);
+		numbers.add(8);
+		numbers.add(9);
+		numbers.add(10);
+		numbers.add(11);
+		numbers.add(12);
+		numbers.add(13);
+		numbers.add(14);
+		arrayListForOnly10Items(numbers);
+
 	}
 
 	public static void arrayList() {
@@ -45,6 +64,28 @@ public class MathFunctions {
 			arrayList1.add(randomNum);
 		}
 
+		for (Integer number : arrayList1) {
+			System.out.println(number);
+		}
+
+	}
+
+	public static void arrayListForOnly10Items(ArrayList<Integer> items) {
+		List<Integer> arrayList1 = new ArrayList<>();
+		System.out.println(items);
+		if (items.size() <= 10) {
+			for (Integer number : items) {
+				arrayList1.add(number);
+			}
+		} else if (items.size() > 10) {
+			for (int i = 0; i < 10; i++) {
+				arrayList1.remove(i);
+				System.out.println(arrayList1);
+				arrayList1.add(i, items.get(i + 10));
+
+			}
+
+		}
 		for (Integer number : arrayList1) {
 			System.out.println(number);
 		}
@@ -76,7 +117,7 @@ public class MathFunctions {
 		}
 
 		for (Integer number : treeSet) {
-			System.out.println(number);
+			System.out.println(number.intValue());
 		}
 
 	}
