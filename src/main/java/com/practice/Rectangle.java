@@ -1,26 +1,19 @@
 package com.practice;
 
+import java.util.Objects;
+
 public class Rectangle {
-
-	private double length;
 	private double width;
-	private String color;
+	private double length;
+	private double area;
+	private String colour;
 
-	public Rectangle() {
+	public double getWidth() {
+		return width;
 	}
 
-	public Rectangle(double length, double width) {
-		this(length, width, "");
-	}
-
-	public Rectangle(double length, double width, String color) {
-		this.length = length;
+	public void setWidth(double width) {
 		this.width = width;
-		this.color = color;
-	}
-
-	public double area() {
-		return length * width;
 	}
 
 	public double getLength() {
@@ -31,19 +24,27 @@ public class Rectangle {
 		this.length = length;
 	}
 
-	public double getWidth() {
-		return width;
+	public String getColour() {
+		return colour;
 	}
 
-	public void setWidth(double width) {
-		this.width = width;
+	public void setColour(String colour) {
+		this.colour = colour;
 	}
 
-	public String getColor() {
-		return color;
+	public double calculateArea() {
+		area = getLength() * getWidth();
+		return area;
 	}
 
-	public void setColor(String color) {
-		this.color = color;
+	@Override
+	public boolean equals(Object rect) {
+		if (rect == this)
+			return true;
+		if (!(rect instanceof Rectangle)) {
+			return false;
+		}
+		Rectangle rect1 = (Rectangle) rect;
+		return area == rect1.area && Objects.equals(colour, rect1.colour);
 	}
 }
